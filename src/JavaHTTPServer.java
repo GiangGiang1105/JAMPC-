@@ -64,7 +64,6 @@ public class JavaHTTPServer extends Thread {
 			BufferedOutputStream dataOut = null; 
 			String fileRequested = null; 
 			try {
-				//we read characters from the client via input stream on the socket 
 				in = new BufferedReader(new InputStreamReader(connect.getInputStream()));
 				//we get character output stream to client(for headers);
 				out = new PrintWriter(connect.getOutputStream());

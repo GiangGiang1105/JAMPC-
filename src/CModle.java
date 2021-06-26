@@ -55,9 +55,6 @@ public class CModle {
 				html += line;
 			}
 
-			/*
-			 * } else { System.out.println("Not fishion"); }
-			 */
 		} catch (IOException e) {
 			e.printStackTrace();
 		}

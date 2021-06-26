@@ -565,9 +565,11 @@ public class JAMPC extends JFrame {
 class Server extends Thread{
 	ServerSocket serverSocket;
 	JavaHTTPServer myServer;
+	
 	public Server(ServerSocket serverSocket) {
 		this.serverSocket = serverSocket;
 	}
+	
 	@Override
 	public void run() {
 		try {
@@ -579,7 +581,6 @@ class Server extends Thread{
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
-		
 	}
 }
 
